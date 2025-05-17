@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.0"
+  },
+  "name": "jwt-auth",
+  "description": "A backend-only JWT-based authentication service built with Node, Express and PostgreSQL.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "migrate:up": "node-pg-migrate up",
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "JWT-AUTH"
+  },
+  "author": "maccrin",
+  "license": "ISC",
+  "devDependencies": {
+    "node-pg-migrate": "^7.9.1",
+    "nodemon": "^3.1.10"
+  }
+}
