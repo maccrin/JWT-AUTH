@@ -14,6 +14,7 @@
   "scripts": {
     "migrate:up": "node-pg-migrate up",
     "server": "nodemon index.js",
+    "start":"node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
