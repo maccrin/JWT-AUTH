@@ -13,7 +13,7 @@
   "main": "index.js",
   "scripts": {
     "migrate:up": "node-pg-migrate up",
-    "server": "nodemon index.js",
+    "dev": "nodemon index.js",
     "start":"node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
