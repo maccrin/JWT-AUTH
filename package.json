@@ -13,8 +13,8 @@
   "main": "index.js",
   "scripts": {
     "migrate:up": "node-pg-migrate up",
-    "dev": "nodemon index.js",
-    "start":"node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "start": "cross-env NODE_ENV=production node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +24,7 @@
   "author": "maccrin",
   "license": "ISC",
   "devDependencies": {
-    "node-pg-migrate": "^7.9.1",
+    "cross-env": "^7.0.3",
     "nodemon": "^3.1.10"
   }
 }
